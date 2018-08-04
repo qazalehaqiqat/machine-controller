@@ -1,0 +1,23 @@
+page-home {
+  .masters {
+    background-color: rgb(74, 80, 76);
+    -webkit-text-fill-color: white
+  }
+  .btn {
+    display: block;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  #right {
+    position: fixed;
+    right: 10px;
+  }
+  .container{
+    margin-top: 100px
+  }
+  .wrapper {
+    margin:auto;
+    display:block;}
+}
