@@ -1,16 +1,13 @@
 
-<ion-content padding class="masters">
+<ion-content padding class="masters ">
   <h2 style="float: right">
       ماشین کنترلی
   </h2>
-    <br>
-    <br>
-    <br>
-    
+    <br><br><br>
   <div class="container">
     <div class="row">
       <div class="col-sm-4 wrapper" (click) = "Up()">
-        <button (Enable)="enableUp" class="btn" [ngStyle]="{'backgroundColor': upMove ? 'rgb(16, 214, 99)' : '#fff' }" id="up">
+        <button (Enable)="enableUp" class="btn button" [ngStyle]="{'backgroundColor': upMove ? 'rgb(16, 214, 99)' : '#fff' }" id="up">
           <img src="assets/imgs/up-arrow-key.svg">
         </button>
       </div>
@@ -19,12 +16,12 @@
     <br>
     <div class="row">
       <div class="col-sm-4" (click)= "Left()">
-        <button class="btn" (enable)="enableLeft" [ngStyle]="{'backgroundColor': leftMove ? 'rgb(16, 214, 99)' : '#fff' }" id="left">
+        <button class="btn button" (enable)="enableLeft" [ngStyle]="{'backgroundColor': leftMove ? 'rgb(16, 214, 99)' : '#fff' }" id="left">
           <img src="assets/imgs/left-arrow-key.svg">
         </button>
       </div>
       <div (click) = "Right()"  class="col-sm-4">
-        <button  class="btn" (Enable)="enableRight" [ngStyle]="{'backgroundColor': rightMove ? 'rgb(16, 214, 99)' : '#fff' }" id="right">
+        <button  class="btn button" (Enable)="enableRight" [ngStyle]="{'backgroundColor': rightMove ? 'rgb(16, 214, 99)' : '#fff' }" id="right">
           <img src="assets/imgs/right-arrow-key.svg">
         </button>
       </div>
@@ -33,7 +30,7 @@
     <br>
     <div class="row">
         <div class="col-sm-4 wrapper" (click) = "Back()">            
-      <button class="btn" (enable)="enableBack" [ngStyle]="{'backgroundColor': backMove ? 'rgb(16, 214, 99)' : '#fff' }" id="back">
+      <button class="btn button" (enable)="enableBack" [ngStyle]="{'backgroundColor': backMove ? 'rgb(16, 214, 99)' : '#fff' }" id="back">
         <img src="assets/imgs/down-arrow-key.svg">
       </button>
     </div>
