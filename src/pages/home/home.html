@@ -1,44 +1,34 @@
+<ion-content padding class="masters " id="zone_joystick">
 
-<ion-content padding class="masters ">
-  <h2 style="float: right">
+
+  <div class="zone static active">
+    <h2 style="float: right">
       ماشین کنترلی
-  </h2>
+    </h2>
     <br><br><br>
     <ion-item>
       <ion-label color="primary">آدرس ماشین</ion-label>
       <ion-input placeholder="192.168.4.1" [(ngModel)]="URL"></ion-input>
     </ion-item>
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4 wrapper" (click) = "Up()">
-        <button (Enable)="enableUp" class="btn button" [ngStyle]="{'backgroundColor': upMove ? 'rgb(16, 214, 99)' : '#fff' }" id="up">
-          <img src="assets/imgs/up-arrow-key.svg">
-        </button>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-sm-4" (click)= "Left()">
-        <button class="btn button" (enable)="enableLeft" [ngStyle]="{'backgroundColor': leftMove ? 'rgb(16, 214, 99)' : '#fff' }" id="left">
-          <img src="assets/imgs/left-arrow-key.svg">
-        </button>
-      </div>
-      <div (click) = "Right()"  class="col-sm-4">
-        <button  class="btn button" (Enable)="enableRight" [ngStyle]="{'backgroundColor': rightMove ? 'rgb(16, 214, 99)' : '#fff' }" id="right">
-          <img src="assets/imgs/right-arrow-key.svg">
-        </button>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="row">
-        <div class="col-sm-4 wrapper" (click) = "Back()">            
-      <button class="btn button" (enable)="enableBack" [ngStyle]="{'backgroundColor': backMove ? 'rgb(16, 214, 99)' : '#fff' }" id="back">
-        <img src="assets/imgs/down-arrow-key.svg">
-      </button>
-    </div>
-    </div>
+
+    <h1>static</h1>
   </div>
+
+  <button (Enable)="enableUp" class="btn button up" [ngStyle]="{'backgroundColor': upMove ? 'rgb(16, 214, 99)' : '#fff' }"
+    id="up">
+    <img src="assets/imgs/up-arrow-key.svg">
+  </button>
+  <button class="btn button left" (enable)="enableLeft" [ngStyle]="{'backgroundColor': leftMove ? 'rgb(16, 214, 99)' : '#fff' }"
+    id="left">
+    <img src="assets/imgs/left-arrow-key.svg">
+  </button>
+  <button class="btn button right" (Enable)="enableRight" [ngStyle]="{'backgroundColor': rightMove ? 'rgb(16, 214, 99)' : '#fff' }"
+    id="right">
+    <img src="assets/imgs/right-arrow-key.svg">
+  </button>
+
+  <button class="btn button down" (enable)="enableBack" [ngStyle]="{'backgroundColor': backMove ? 'rgb(16, 214, 99)' : '#fff' }"
+    id="back">
+    <img src="assets/imgs/down-arrow-key.svg">
+  </button>
 </ion-content>
