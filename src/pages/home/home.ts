@@ -39,7 +39,7 @@ export class HomePage {
       const body = new HttpParams()
       var url = this.URL + "right"
       console.log("url ? : ", url)
-      return this.http.post(url, decodeURIComponent(body.toString()), this.httpOptions).subscribe(datav => {
+      return this.http.get(url).subscribe(datav => {
       }, err => {
         console.log(err)
       })
@@ -50,7 +50,7 @@ export class HomePage {
       const body = new HttpParams()
       url = this.URL + "stop"
       console.log("url ? : ", url)
-      return this.http.post(url, decodeURIComponent(body.toString()), this.httpOptions).subscribe(datav => {
+      return this.http.get(url).subscribe(datav => {
       }, err => {
         console.log(err)
       })
@@ -68,7 +68,7 @@ export class HomePage {
       const body = new HttpParams()
       var url = this.URL + "left"
       console.log("url ? : ", url)
-      return this.http.post(url, decodeURIComponent(body.toString()), this.httpOptions).subscribe(datav => {
+      return this.http.get(url).subscribe(datav => {
       }, err => {
         console.log(err)
       })
@@ -78,7 +78,7 @@ export class HomePage {
       const body = new HttpParams()
       url = this.URL + "stop"
       console.log("url ? : ", url)
-      return this.http.post(url, decodeURIComponent(body.toString()), this.httpOptions).subscribe(datav => {
+      return this.http.get(url).subscribe(datav => {
       }, err => {
         console.log(err)
       })
@@ -96,7 +96,7 @@ export class HomePage {
       const body = new HttpParams()
       var url = this.URL + "forward"
       console.log("url ? : ", url)
-      return this.http.post(url, decodeURIComponent(body.toString()), this.httpOptions).subscribe(datav => {
+      return this.http.get(url).subscribe(datav => {
       }, err => {
         console.log(err)
       })
@@ -106,7 +106,7 @@ export class HomePage {
       const body = new HttpParams()
       url = this.URL + "stop"
       console.log("url ? : ", url)
-      return this.http.post(url, decodeURIComponent(body.toString()), this.httpOptions).subscribe(datav => {
+      return this.http.get(url).subscribe(datav => {
       }, err => {
         console.log(err)
       })
@@ -124,7 +124,7 @@ export class HomePage {
       const body = new HttpParams()
       var url = this.URL + "backward"
       console.log("url ? : ", url)
-      return this.http.post(url, decodeURIComponent(body.toString()), this.httpOptions).subscribe(datav => {
+      return this.http.get(url).subscribe(datav => {
 
       }, err => {
         console.log(err)
@@ -135,12 +135,26 @@ export class HomePage {
       const body = new HttpParams()
       url = this.URL + "stop"
       console.log("url ? : ", url)
-      return this.http.post(url, decodeURIComponent(body.toString()), this.httpOptions).subscribe(datav => {
+      return this.http.get(url).subscribe(datav => {
       }, err => {
         console.log(err)
       })
     }
   }
+  stop(){
+    this.initHeader()    
+    this.backMove = false;
+    this.leftMove = false;
+    this.upMove = false;
+    this.rightMove = false
+      var url = this.URL + "stop"
+      console.log("url ? : ", url)
+      return this.http.get(url).subscribe(datav => {
+      }, err => {
+        console.log(err)
+      })
+    }
+  
   initHeader() {
     this.httpOptions = {
       headers: new HttpHeaders({
@@ -150,11 +164,5 @@ export class HomePage {
         'content-type': 'application/json'
       }),
     }
-    // var headers = new Headers();
-    // headers.append('Access-Control-Allow-Origin' , '*');
-    // headers.append('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, PUT');
-    // headers.append('Accept','application/json');
-    // headers.append('content-type','application/json');
-    // this.httpOptions = new RequestOptions({ headers:headers});
   }
 }
