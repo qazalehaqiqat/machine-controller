@@ -1,8 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
+<<<<<<< HEAD
 <widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>carrol</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="ghazaleh_haghighat@yahoo.com" href="http://ionicframework.com/">Ionic Framework Team</author>
+=======
+<widget id="haghighat.ghazal.carrol" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Carrol</name>
+    <description>Controller Of Carrol Mashin</description>
+    <author email="ghazaleh_haghighat@yahoo.com" href="https://www.linkedin.com/in/ghazaleh-haghighat-16a70512a">Ghazaleh HaghighatNezhad </author>
+>>>>>>> 40e38c8ab7848e438f744d270405b174364f1690
     <content src="index.html" />
     <access origin="*" />
     <preference name="orientation" value="portrait" />
@@ -78,12 +85,21 @@
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
     </platform>
     <allow-navigation href="http://10.0.75.1:8100" />
+<<<<<<< HEAD
     <engine name="ios" spec="~4.5.4" />
     <engine name="browser" spec="~5.0.3" />
     <engine name="android" spec="6.3.0" />
+=======
+>>>>>>> 40e38c8ab7848e438f744d270405b174364f1690
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <plugin name="cordova-plugin-device" spec="^2.0.1" />
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
+<<<<<<< HEAD
+=======
+    <engine name="ios" spec="~4.5.4" />
+    <engine name="browser" spec="~5.0.3" />
+    <engine name="android" spec="6.3.0" />
+>>>>>>> 40e38c8ab7848e438f744d270405b174364f1690
 </widget>
