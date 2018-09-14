@@ -199,7 +199,7 @@ export class HomePage {
     this.leftMove = false;
     this.upMove = false;
     this.backMove = false;
-    console.log("Stop");
+    console.log("Stop In Function");
     this.initHeader()
     const body = new HttpParams()
     var url = 'http://' + this.URL + "/stop"
@@ -212,7 +212,7 @@ export class HomePage {
   Right() {
     this.initHeader()
     this.enableRight = true;
-    this.rightMove = !this.rightMove;
+    this.rightMove = true;
     this.leftMove = false;
     this.upMove = false;
     this.backMove = false;
@@ -242,7 +242,7 @@ export class HomePage {
   Left() {
     this.initHeader()
     this.enableLeft = true;
-    this.leftMove = !this.leftMove;
+    this.leftMove = true;
     this.rightMove = false;
     this.upMove = false;
     this.backMove = false
@@ -260,7 +260,7 @@ export class HomePage {
   Up() {
     this.initHeader()
     this.enableUp = true;
-    this.upMove = !this.upMove;
+    this.upMove = true;
     this.leftMove = false;
     this.rightMove = false;
     this.backMove = false
@@ -280,7 +280,7 @@ export class HomePage {
   Back() {
     this.initHeader()
     this.enableBack = true;
-    this.backMove = !this.backMove;
+    this.backMove = true;
     this.leftMove = false;
     this.upMove = false;
     this.rightMove = false
