@@ -27,15 +27,9 @@
     "cordova-android": "6.3.0",
     "cordova-browser": "~5.0.3",
     "cordova-ios": "~4.5.4",
-<<<<<<< HEAD
-    "cordova-plugin-device": "^2.0.1",
-    "cordova-plugin-ionic-keyboard": "^2.0.5",
-    "cordova-plugin-ionic-webview": "^1.1.16",
-=======
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.1.2",
     "cordova-plugin-ionic-webview": "^1.2.1",
->>>>>>> 40e38c8ab7848e438f744d270405b174364f1690
     "cordova-plugin-splashscreen": "^5.0.2",
     "cordova-plugin-whitelist": "^1.3.3",
     "ionic-angular": "3.9.2",
